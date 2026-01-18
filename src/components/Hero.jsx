@@ -213,7 +213,7 @@ const Hero = () => {
 
                 {/* Title slides from LEFT */}
                 <motion.h1 className="hero-title" variants={titleFromLeft}>
-                    I'm <span className="highlight">Radhika Bhagare</span>,
+                    I'm <span className="highlight">Radhika Bhagare</span>
                     <br />
                     <motion.span
                         initial={{ opacity: 0, x: -30 }}

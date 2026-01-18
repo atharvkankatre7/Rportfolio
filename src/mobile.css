@@ -75,7 +75,8 @@
      ========================================== */
     .hero {
         min-height: auto;
-        padding: 5rem 1.5rem 2.5rem;
+        padding: 6rem 1.5rem 2.5rem;
+        /* More top padding to clear navbar */
         background: linear-gradient(180deg,
                 rgba(255, 241, 245, 0.5) 0%,
                 rgba(255, 255, 255, 1) 100%);
@@ -108,15 +109,20 @@
         object-fit: cover;
     }
 
+    /* Badge positioned at bottom right to avoid overlap */
     .hero-badge {
-        position: absolute;
-        top: -8px;
-        right: -12px;
-        font-size: 0.7rem;
-        padding: 0.3rem 0.6rem;
-        border-radius: 16px;
-        background: white;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        position: absolute !important;
+        top: auto !important;
+        bottom: -8px !important;
+        left: auto !important;
+        right: -20px !important;
+        font-size: 0.65rem !important;
+        padding: 0.25rem 0.5rem !important;
+        border-radius: 12px !important;
+        background: white !important;
+        color: var(--text-primary) !important;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+        z-index: 10 !important;
     }
 
     /* Name & Role - Large readable type */
